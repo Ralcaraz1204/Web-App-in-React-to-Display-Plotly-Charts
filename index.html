@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizaciones Climáticas con Plotly</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .plot-card {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .plot-card:hover {
+            background: #ebf5fb;
+            transform: translateX(5px);
+        }
+        .plot-card h2 {
+            color: #2980b9;
+            margin-top: 0;
+        }
+        .plot-card p {
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visualizaciones de Datos Climáticos</h1>
+        
+        <div class="plot-card">
+            <h2>Gráfico de Dispersión Polar</h2>
+            <p>Muestra la relación entre dirección y fuerza del viento como puntos discretos, permitiendo identificar patrones direccionales.</p>
+            <a href="polar_scatter_plot.html" class="btn">Ver Visualización</a>
+        </div>
+        
+        <div class="plot-card">
+            <h2>Gráfico de Líneas Polar</h2>
+            <p>Conecta los puntos creando una forma cerrada, facilitando ver la distribución direccional continua del viento.</p>
+            <a href="polar_line_plot.html" class="btn">Ver Visualización</a>
+        </div>
+        
+        <div class="plot-card">
+            <h2>Gráfico de Barras Polar</h2>
+            <p>Representa la magnitud como barras radiales, proporcionando una visión cuantitativa de los vientos por dirección.</p>
+            <a href="polar_bar_plot.html" class="btn">Ver Visualización</a>
+        </div>
+        
+        <footer>
+            <p>Visualizaciones creadas con Plotly | Universidad de Colima - FIME</p>
+        </footer>
+    </div>
+</body>
+</html>
